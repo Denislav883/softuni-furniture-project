@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-export const generateAutuhToken = () => {
+export const generateAutuhToken = (user) => {
     const payload = {
         id: user.id,
         password: user.email
